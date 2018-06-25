@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<title>Entry Form</title>
+	</head>
+	<style>
+h1 {color: #1A237E;
+    font-family: Forte;
+	font-size:250%;
+	padding-top:5%;
+   } 
+
+h3 {color: #1A237E;
+    font-family: Arial Rounded MT Bold;
+	font-size:130%;
+	
+   } 
+div {
+    background-color: #D6EAF8;
+    overflow: auto;
+    white-space: nowrap;
+	border-radius: 20px;
+}
+div.scrollmenu1 a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+}
+
+div.scrollmenu1 a:hover {
+    background-color: #D6EAF8;
+}
+div.scrollmenu1 {
+    border-radius: 20px;
+    background-color: #D6EAF8;
+	padding: 15px;
+}
+	</style>
+    <body>
+	<center><h1> Entry Form Page  </h1></center>
+<center>
+<div class="scrollmenu1">
+  <a href="Welcome.html">Home Page |</a>
+  <a href="Search.html">Search Page |</a>
+  <a href="EntryFormDetails.html">Entry Form |</a>
+  <a href="Contact.html">Contact Page</a>
+</div>
+</center>
+	
+	<form action="EntryFormDetails.php" method="post"/>
+	
+	<center>
+	    <h3>Welcome! Please enter the details for TYPE table </h3>
+	    <lable for ="Use_Id"> <a style="text-align:"left": >User ID : </a> </lable>
+		<input type="text" id="Use_Id" name="Use_Id" required="true">
+		<br><br>
+		<lable for ="Post_Id"> <a style="text-align:"left": >Post ID : </a> </lable>
+		<input type="text" id="Post_Id" name="Post_Id" required="true">
+		<br><br>
+	    <lable for ="Type_Id"> <a style="text-align:"left": >Type ID : </a> </lable>
+		<input type="text" id="Type_Id" name="Type_Id" required="true">
+		<br><br>
+		<lable for ="Which_Type"> <a style="text-align:"left": >Which Type : </a> </lable>
+		<input type="text" id="Which_Type" name="Which_Type" required="true">
+		<br><br>
+		<lable for ="Type_Name"> <a style="text-align:"left": >Type Name : </a> </lable>
+		<input type="text" id="Type_Name" name="Type_Name" required="true">
+		<br><br>
+		<lable for ="Type_Description"> <a style="text-align:"left": >Type Description : </a> </lable>
+		<input type="text" id="Type_Description" name="Type_Description" required="true">
+		<br><br>
+		<lable for ="Type_URL"> <a style="text-align:"left": >Type URL : </a> </lable>
+		<input type="text" id="Type_URL" name="Type_URL" required="true">
+		<br><br>
+		</center>
+		
+		
+		<div>
+		<center>
+		<h3>Enter the details for USE_DETAILS table </h3>
+	    <lable for ="Post_Id"> <a style="text-align:"left": >Post ID : </a> </lable>
+		<input type="text" id="Post_Id" name="Post_Id" required="true">
+		<br><br>
+		<lable for ="Type_Id"> <a style="text-align:"left": >Type ID : </a> </lable>
+		<input type="text" id="Type_Id" name="Type_Id" required="true">
+		<br><br>
+		<lable for ="Use_Id"> <a style="text-align:"left": >User ID : </a> </lable>
+		<input type="text" id="Use_Id" name="Use_Id" required="true">
+		<br><br>
+		<lable for ="Use_Name> <a style="text-align:"left": >User Name : </a> </lable>
+		<input type="text" id="Use_Name" name="Use_Name" required="true">
+		<br><br>
+		<lable for ="Use_Email"> <a style="text-align:"left": >User Email : </a> </lable>
+		<input type="text" id="Use_Email" name="Use_Email" required="true">
+		<br><br>
+		<lable for ="Use_Reply"> <a style="text-align:"left": >User Reply : </a> </lable>
+		<input type="text" id="Use_Reply" name="Use_Reply" required="true">
+		<br><br>
+		</center>
+		</div>
+		
+		<center>
+	    <h3>Enter the details for USE_POSTS table </h3>
+	    <lable for ="Type_Id"> <a style="text-align:"left": >Type ID : </a> </lable>
+		<input type="text" id="Type_Id" name="Type_Id" required="true">
+		<br><br>
+		<lable for ="Use_Id"> <a style="text-align:"left": >User ID : </a> </lable>
+		<input type="text" id="Use_Id" name="Use_Id" required="true">
+		<br><br>
+		<lable for ="Post_Id"> <a style="text-align:"left": >Post ID : </a> </lable>
+		<input type="text" id="Post_Id" name="Post_Id" required="true">
+		<br><br>
+		<lable for ="Use_Posts> <a style="text-align:"left": >User Posts : </a> </lable>
+		<input type="text" id="Use_Posts" name="Use_Posts" required="true">
+		<br><br>
+		<lable for ="No_of_Likes"> <a style="text-align:"left": >No-of-Likes : </a> </lable>
+		<input type="text" id="No_of_Likes" name="No_of_Likes" required="true">
+		<br><br>
+		<lable for ="No_of_Comments"> <a style="text-align:"left": >No-of-Comments : </a> </lable>
+		<input type="text" id="No_of_Comments" name="No_of_Comments" required="true">
+		<br><br>
+		<lable for ="Total_Views"> <a style="text-align:"left": >Total Views : </a> </lable>
+		<input type="text" id="Total_Views" name="Total_Views" required="true">
+		<br><br>
+		<lable for ="Firstpost_Date"> <a style="text-align:"left": >Firstpost Date : </a> </lable>
+		<input type="text" id="Firstpost_Date" name="Firstpost_Date" required="true">
+		<br><br>
+		</center>
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		
+		
+		</body>
+		</html>

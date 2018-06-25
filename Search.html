@@ -1,0 +1,143 @@
+<html>
+<title> Search page </title>
+<head>
+<style>
+h1 {color: #1A237E;
+    font-family: Forte;
+	font-size:250%;
+	padding-top:5%;
+   } 
+h2 {color: #1A237E;
+    font-family: Forte;
+	font-size:250%;
+   } 
+h3 {color: #1A237E;
+    font-family: Arial Rounded MT Bold;
+	font-size:130%;
+	
+   } 
+p.padding2 {
+    padding-left:20%;
+	padding-right:20%;
+}
+p.padding3 {
+    padding-left:0%;
+	padding-right:33%;
+}
+p {color:black;
+   font-family: Arial Rounded MT Bold;
+   font-size :100%;
+   }
+div.scrollmenu1 {
+    background-color: #94C9EC;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu1 a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+}
+
+div.scrollmenu1 a:hover {
+    background-color: #94C9EC;
+}
+div {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+	padding: 15px;
+}
+
+.dropbtn {
+    background-color: #D6EAF8;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #D6EAF8 ;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #1A237E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+
+</style>
+</head>
+
+<center><h1> Search Page  </h1></center>
+<center>
+<div class="scrollmenu1">
+  <a href="Welcome.html">Home Page |</a>
+  <a href="Search.html">Search Page |</a>
+  <a href="Userlogin.html">Login Page |</a>
+  <a href="Sign.html">SignUp Page |</a>
+  <a href="Contact.html">Contact Page</a>
+</div>
+</center>
+<br>
+
+<center><h3>In this page you can find the search results of 5717G4 (Group 4) Database</h3>
+<div class="Dropdown">
+<button onclick="myFunction()" class="dropbtn">Search for</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Query1.php">Online Communities </a>
+    <a href="Query2.php">Forums</a>
+    <a href="Query3.php">Total Number of Records</a>
+	<a href="Query4.php">User Details</a>
+	<a href="Query5.php">User's Posts Details</a>
+	
+  </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

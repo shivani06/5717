@@ -1,0 +1,102 @@
+<html>
+   
+   <head>
+      <title>Login Page</title>
+      
+      <style type = "text/css">
+         body {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:14px;
+			
+         }
+         label {
+            font-weight:bold;
+            width:100px;
+            font-size:14px;
+         }
+         .box {
+            border:#666666 solid 1px;
+         }
+		 h1 {color: #1A237E;
+            font-family: Forte;
+	        font-size:250%;
+			padding-top:0%;
+	        } 
+		 p.padding2 {
+           padding-left:20%;
+	       padding-right:20%;
+         }
+		 p {color:#1A237E;
+           font-family: Arial Rounded MT Bold;
+           font-size :100%;
+         }
+        div.scrollmenu1 {
+        background-color: #64B5F6;
+        overflow: auto;
+        white-space: nowrap;
+       }
+
+       div.scrollmenu1 a {
+       display: inline-block;
+       color: white;
+       text-align: center;
+       padding: 1px;
+       text-decoration: none;
+      }
+
+      div.scrollmenu1 a:hover {
+      background-color: #64B5F6;
+     }
+      div.scrollmenu1 {
+      border-radius: 20px;
+      background-color: #64B5F6;
+	  padding: 15px;
+     }
+      </style>
+      
+   </head>
+   <center>
+   <div class="scrollmenu1">
+  <a href="Welcome.html">Home Page |</a>
+  <a href="Search.html">Search Page |</a>
+  <a href="Userlogin.html">Login Page |</a>
+  <a href="Sign.html">SignUp Page |</a>
+  <a href="Contact.html">Contact Page</a>
+  </center>
+</div>
+   <center><h1> Sign Up Page  </h1></center>
+   <body bgcolor = "#FFFFFF">
+	  <div align = "center">
+         <div style = "width:300px; border: solid 1px #1A237E; " align = "left">
+            <div style = "background-color:#1A237E; color:#FFFFFF; padding:3px;"><center><b>Sign Up Here</b></center></div>
+				
+            <div style = "margin:30px">
+               
+               <form action = "SignUp.php" method = "post">
+			      <label>Name  :</label><br></br>
+				  <input type = "text" class = "box"><br /><br />
+				  <label>Email Id :</label><br></br>
+				  <input type = "text" class = "box"/><br /><br />
+				  <label>User ID  :</label> (*note: only number)<br></br>
+				  <input type = "text" name = "userid" class = "box"/><br /><br />
+                  <label>UserName  :</label><br></br>
+				  <input type = "text" name = "uname" class = "box"/><br /><br />
+                  <label>Password  :</label><br></br>
+				  <input type = "password" name = "upass" class = "box" /><br/><br />
+				  <label>Confirm Password  :</label><br></br>
+				  <input type = "password" class = "box" /><br/><br />
+                  <input type = "submit" value = " SignUp"/><br />
+               </form>
+               
+               <div style = "font-size:11px; color:#cc0000; margin-top:10px"></div>
+					
+            </div>
+				
+         </div>
+			
+      </div>
+	  <center>
+	  <p class="padding2">*Note: After finishing your registration, your login credentials will be saved in the ADMIN Table of the  5717G4 database. </p></center>
+
+   </body>
+</html>
